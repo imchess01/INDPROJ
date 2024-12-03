@@ -1,9 +1,11 @@
+/* General body styling */
 body {
   margin: 0;
   font-family: Arial, Helvetica, Sans-Serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
+/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -13,8 +15,8 @@ body {
 }
 
 .navbar .logo img {
-  height: 40px; /* Adjust as needed */
-  margin-right: 20px; /* Space between logo and navigation titles */
+  height: 40px; 
+  margin-right: 20px;
 }
 
 .navbar .links {
@@ -23,21 +25,22 @@ body {
 }
 
 .navbar a {
-  color: black; /* Change text color to black */
+  color: black;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 18px; /* Slightly larger text */
+  font-size: 18px; 
 }
 
 .navbar a:hover {
-  color: lightgray; /* Change text color to light gray on hover */
+  color: lightgray; 
 }
 
+/* Video container styling */
 .video-container {
   position: relative;
   width: 100%;
-  height: 60vh; /* Smaller height */
-  overflow: hidden; /* Ensure overlay is only applied to the video */
+  height: 60vh; 
+  overflow: hidden; 
 }
 
 .video-container video {
@@ -52,24 +55,24 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Black to transparent gradient */
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: flex-start; /* Align items to the start (left) */
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start; 
   color: white;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
   padding: 20px;
 }
 
 .video-container .overlay-logo {
-  width: 200px; /* Adjust as needed */
-  margin-bottom: 40px; /* Increase space between logo and text */
-  margin-top: -20px; /* Move the logo slightly higher */
+  width: 200px; 
+  margin-bottom: 40px; 
+  margin-top: -20px; 
 }
 
 .video-container .overlay h1 {
-  margin: 0 0 10px 0; /* Add bottom margin to space out the text */
+  margin: 0 0 10px 0; 
   font-size: 3em;
   white-space: nowrap;
   overflow: hidden;
@@ -78,18 +81,19 @@ body {
 }
 
 .video-container .line {
-  width: calc(3em * 12); /* Adjust the width to match the text width */
+  width: calc(3em * 12); 
   border-bottom: 2px solid white;
 }
 
+/* Typing animation keyframes */
 @keyframes typing {
   from { width: 0; }
-  to { width: 20ch; /* 'Unlock Your Potential.' is approximately 20 characters including spaces */ }
+  to { width: 20ch; }
 }
 
 @keyframes typing2 {
   from { width: 0; }
-  to { width: 32ch; /* 'Save Time, Automate Your Future.' is approximately 32 characters including spaces */ }
+  to { width: 32ch;  }
 }
 
 @keyframes blink-caret {
@@ -103,7 +107,7 @@ body {
 }
 
 .line-2 {
-  visibility: hidden; /* Hide until animation starts */
+  visibility: hidden;
 }
 
 .line-2.typing {
@@ -112,7 +116,7 @@ body {
   animation: typing2 4s steps(32, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
-/* Content sections */
+/* Content sections styling */
 .content-section {
   padding: 60px 20px;
   background-color: white;
@@ -127,7 +131,7 @@ body {
 }
 
 .content-section:nth-child(odd) {
-  background-color: #f8f8f8; /* Alternate background color for sections */
+  background-color: #f8f8f8; 
 }
 
 .content-section.visible {
@@ -181,7 +185,7 @@ body {
   font-size: 1.5em;
 }
 
-/* Call to Action */
+/* Call to Action button styling */
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
@@ -197,7 +201,7 @@ body {
   background-color: #45a049;
 }
 
-/* Testimonials */
+/* Testimonials styling */
 .testimonial {
   margin: 20px 0;
   padding: 20px;
@@ -207,30 +211,31 @@ body {
 }
 
 .rating span {
-  color: black; /* Gold color for better contrast */
+  color: black; 
   font-size: 1.5em;
 }
 
-/* Floating Circles */
+/* Floating Circles styling */
 .floating-circles {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure it is behind the content */
+  z-index: -1; 
   overflow: hidden;
 }
 
 .floating-circle {
   position: absolute;
-  width: 100px; /* Larger size */
-  height: 100px; /* Larger size */
-  background-color: #90EE90; /* Lighter shade of green */
+  width: 100px; 
+  height: 100px; 
+  background-color: #90EE90; 
   border-radius: 50%;
   animation: move 10s linear infinite;
 }
 
+/* Floating Circles animation keyframes */
 @keyframes move {
   0% { transform: translate(0, 0); }
   25% { transform: translate(50px, -50px); }
@@ -239,7 +244,7 @@ body {
   100% { transform: translate(0, 0); }
 }
 
-/* Footer */
+/* Footer styling */
 footer {
   background-color: #333;
   color: white;
@@ -252,27 +257,31 @@ footer .footer-content p {
   margin: 5px 0;
 }
 
+/* Fade-in animation keyframes */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
+/* Slide-in animation keyframes */
 @keyframes slideIn {
   from { width: 0; }
   to { width: 50%; }
 }
 
+/* Fade-in-up animation keyframes */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Bounce-in animation keyframes */
 @keyframes bounceIn {
   from { transform: scale(0.5); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
 
-/* Responsive Design */
+/* Responsive Design for portrait orientation */
 @media (orientation: portrait) {
   .navbar {
     flex-direction: column;
@@ -305,7 +314,7 @@ footer .footer-content p {
   }
 }
 
-/* Reduced Motion */
+/* Reduced Motion preference */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
